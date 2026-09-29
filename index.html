@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talk to our voice assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #EEF2F6;
+      --ink: #14213D;
+      --muted: #52607A;
+      --accent: #2D6A8F;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Instrument Sans", system-ui, sans-serif;
+      display: grid;
+      place-items: center;
+      padding: 2rem 1.25rem;
+    }
+    main { max-width: 34rem; }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+    }
+    p { font-size: 1.125rem; line-height: 1.6; color: var(--muted); }
+    .hint {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      border-left: 3px solid var(--accent);
+      padding-left: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Talk to our voice assistant</h1>
+    <p>Ask a question out loud and get an answer right away. No app or phone call needed.</p>
+    <p class="hint">Tap the button in the bottom-right corner to start, and allow microphone access when your browser asks.</p>
+  </main>
+
+  <atoms-widget assistant-id="6abb4f0e2a8dd4312901edf8"></atoms-widget>
+  <script src="https://unpkg.com/atoms-widget-core@latest/dist/embed/widget.umd.js"></script>
+</body>
+</html>
